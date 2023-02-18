@@ -45,10 +45,7 @@ export default function AuthNavigator() {
           tabBarInactiveTintColor: 'gray',
         })}
       >
-        <Tab.Screen 
-          name="Home" 
-          component={Home}
-        />
+        <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Library" component={PokemonLibrary} />
         <Tab.Screen name="Profile" component={Profile} />
         <Tab.Screen name="Get Random" component={RandomPokemon} />
