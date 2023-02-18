@@ -1,10 +1,21 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
 export default function Profile(){
     return(
-        <View>
-            <Text>Profile page</Text>
+        <View style={styles.container}>
+            <Text style={styles.title}>Hello, User</Text>
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        marginTop: 48,
+    },
+    title: {
+        fontWeight:'bold',
+        textAlign: 'center',
+    },
+})
