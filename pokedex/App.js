@@ -7,6 +7,7 @@ import 'react-native-gesture-handler';
 import Login from './screens/Login'
 import Home from './screens/Home'
 import PokemonLibrary from './screens/PokemonLibrary';
+import RandomPokemon from './screens/RandomPokemon';
 
 const Stack = createNativeStackNavigator()
 
@@ -17,6 +18,7 @@ export default function AuthNavigator() {
       <Stack.Navigator>
         {/* <Stack.Screen name="Login" component={Login} /> */}
         <Stack.Screen name="Library" component={PokemonLibrary} />
+        {/* <Stack.Screen name="Random" component={RandomPokemon} /> */}
         <Stack.Screen name="Home" screen="Home" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
